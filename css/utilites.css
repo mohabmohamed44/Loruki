@@ -240,7 +240,29 @@
 }
 
 
+.lead {
+  font-size: 1.5rem;
+}
 
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 1.2rem;
+}
+
+.lg {
+  font-size: 2rem;
+}
+
+.xl {
+  font-size: 3rem;
+}
+
+.w-100{
+  width: 100%;
+}
 
 .text-secondary {
   color: #333;
@@ -292,4 +314,13 @@
 .bg-secondary, .btn-secondary {
   background-color: var(--secondary-color);
   color: var(--alt-color);
+}
+
+.bg-dark {
+  background-color: #333;
+  color: var(--alt-color);
+}
+
+.bg-light {
+  color: white;
 }

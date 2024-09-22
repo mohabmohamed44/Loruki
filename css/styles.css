@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
   --primary-color: #074aed;
-  --secondary-color:  #15337c;
+  --secondary-color: #15337c;
   --alt-color: white;
+  --tertiary-color: #8b8b8b;
   --main-font: "Nunito", sans-serif;
 }
 
@@ -13,11 +14,13 @@
   box-sizing: border-box;
 }
 
-input, input::placeholder, button {
-  font-family:var(--main-font);
+input,
+input::placeholder,
+button {
+  font-family: var(--main-font);
 }
 
-.container {  
+.container {
   width: 80%;
 }
 
@@ -25,7 +28,7 @@ body {
   font-family: var(--main-font);
   color: #333;
   line-height: 1.6;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden; /* Prevent horizontal scrollbar */
@@ -33,7 +36,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #333;
 }
 
 img {
@@ -83,8 +85,6 @@ p {
   transition: all 1s ease;
 }
 
-
-
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -92,8 +92,6 @@ p {
   padding: 20px;
   margin: 10px 0; /* Changed from margin on all sides to vertical margin only */
 }
-
-
 
 /* showcase Styling */
 
@@ -109,7 +107,7 @@ p {
 }
 
 .showcase::before {
-  content: ' ';
+  content: " ";
   position: absolute;
   height: 100px;
   bottom: -70px;
@@ -165,13 +163,13 @@ p {
   margin: 30px 0;
 }
 
-.showcase input[type='text'], 
-.showcase input[type='email'] {
+.showcase input[type="text"],
+.showcase input[type="email"] {
   border: 0;
   border-bottom: 1px solid #b4becb;
   width: 100%;
   padding: 3px;
-  font-size: 17px
+  font-size: 17px;
 }
 
 .showcase input:focus {
@@ -188,16 +186,15 @@ p {
   background-color: var(--primary-color);
   color: #fff;
   font-size: 16px;
-  transition: all 0.5s ease-in-out
+  transition: all 0.5s ease-in-out;
 }
 
 .btn-outline {
   background-color: transparent;
   border: 1px solid #fff;
-
 }
 
-a.btn-outline:hover{
+a.btn-outline:hover {
   background-color: var(--secondary-color);
   transition: all 0.5s ease-in-out;
   color: var(--alt-color);
@@ -219,9 +216,8 @@ a.btn-outline:hover{
   gap: 20px;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-
 
 /* Stats section */
 
@@ -249,7 +245,6 @@ a.btn-outline:hover{
   font-weight: 400;
 }
 
-
 /* Cli */
 
 .cli .grid {
@@ -261,7 +256,6 @@ a.btn-outline:hover{
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
 }
-
 
 /* Cloud */
 
@@ -282,15 +276,96 @@ a.btn-outline:hover{
   border-color: var(--alt-color);
 }
 
+/* Languages */
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .showcase .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .showcase-form {
-    justify-self: center;
-    width: 100%;
-  }
+.languages .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
 }
+
+.languages .card {
+  text-align: center;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+}
+
+.languages .card:nth-child(5) {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--alt-color);
+  padding: 40px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .social {
+  margin-bottom: 20px;
+}
+
+.footer .social a {
+  margin-right: 10px;
+}
+
+.footer .social a i {
+  color: var(--alt-color);
+  transition: color 0.3s ease;
+}
+
+.footer .social a i:hover {
+  color: var(--tertiary-color);
+}
+
+.footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+}
+
+.footer nav ul li {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.footer nav ul li a {
+  color: var(--alt-color);
+  transition: color 0.3s ease;
+}
+
+.footer nav ul li a:hover {
+  color: var(--tertiary-color);
+}
+
+.footer .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+
