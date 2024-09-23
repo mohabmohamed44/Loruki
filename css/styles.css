@@ -130,6 +130,11 @@ p {
   overflow: visible;
 }
 
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in;
+  animation-delay: 0.5s;
+}
+
 .showcase h1 {
   font-size: 40px;
 }
@@ -158,6 +163,8 @@ p {
   background-color: #fff; /* Add this to ensure the form has a solid background */
   border-radius: 10px; /* Optional: add this for rounded corners */
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Optional: add this for a subtle shadow */
+  animation: slideInFromRight 1s ease-in;
+  animation-delay: 0.5s;
 }
 
 .showcase .form-control {
@@ -229,6 +236,7 @@ a.btn-outline:hover {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  animation: slideInFromBottom 1s ease-in;
 }
 
 .stats .stats-heading {
@@ -248,6 +256,10 @@ a.btn-outline:hover {
 
 /* Cli */
 
+.cli {
+  animation: slideInFromLeft 1s ease-in;
+}
+
 .cli .grid {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -260,9 +272,11 @@ a.btn-outline:hover {
 
 /* Cloud */
 
-.cloud {
+.cloud .container {
   grid-template-columns: 4fr 3fr;
+  animation:slideInFromLeft 1s ease-in;
 }
+
 
 .btn-dark {
   background-color: var(--primary-color);
@@ -278,6 +292,11 @@ a.btn-outline:hover {
 }
 
 /* Languages */
+
+.languages {
+  animation: slideInFromLeft 1s ease-in;
+}
+
 
 .languages .flex {
   display: flex;
@@ -369,6 +388,43 @@ a.btn-outline:hover {
 }
 
 
+/* Animations */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /* features page */
 
