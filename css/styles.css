@@ -437,15 +437,21 @@ a.btn-outline:hover {
   object-position:left;
   position: relative;
   right: 0;
-  left: 40%;
+  justify-self: flex-end;
 }
 /* features sub-head */
+.features-sub-head .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
 .features-sub-head .container img {
-  object-fit: cover;
-  object-position:left;
-  position: relative;
-  right: 0;
-  left: 40%;
+  max-width: 100%; /*Ensure it doesn't overflow*/
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
 }
 
 .features-sub-head .container h1 {
@@ -502,3 +508,4 @@ a.btn-outline:hover {
   grid-column: 3/7;
   grid-row: 3/4;
 }
+
