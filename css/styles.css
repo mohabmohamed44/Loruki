@@ -5,8 +5,14 @@
   --secondary-color: #15337c;
   --alt-color: white;
   --tertiary-color: #8b8b8b;
-  --blue-degree: #001E39;
+  --blue-degree: #001e39;
   --main-font: "Nunito", sans-serif;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --warning-color: #f0ad4e;
+  --warning-subtle: #f8d7da;
+  --success-subtle: #d4edda;
+  --error-subtle: #c24e4e;
 }
 
 * {
@@ -275,10 +281,9 @@ a.btn-outline:hover {
 
 .cloud .container {
   grid-template-columns: 4fr 3fr;
-  animation:slideInFromLeft 1s ease-in;
+  animation: slideInFromLeft 1s ease-in;
   animation-delay: 0.5s;
 }
-
 
 .btn-dark {
   background-color: var(--primary-color);
@@ -299,7 +304,6 @@ a.btn-outline:hover {
   animation: slideInFromRight 1s ease-in;
   animation-delay: 0.5s;
 }
-
 
 .languages .flex {
   display: flex;
@@ -390,7 +394,6 @@ a.btn-outline:hover {
   font-size: 0.9em;
 }
 
-
 /* Animations */
 
 @keyframes slideInFromLeft {
@@ -442,7 +445,7 @@ a.btn-outline:hover {
 
 .features-head .container img {
   object-fit: cover;
-  object-position:left;
+  object-position: left;
   position: relative;
   right: 0;
   justify-self: flex-end;
@@ -492,7 +495,7 @@ a.btn-outline:hover {
 
 .features-main .container p {
   text-align: left;
-  margin-right:  10px;
+  margin-right: 10px;
   padding-left: 20px;
 }
 
@@ -538,6 +541,50 @@ a.btn-outline:hover {
   animation-delay: 0.5s;
 }
 
-/* Media Queries */
+/* Docs Page */
+
+code,
+pre {
+  background-color: #333;
+  color: var(--alt-color);
+  padding: 10px;
+}
+
+.alert {
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
 
 
+.docs-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.docs-main .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+
+
+.docs-main h3 {
+  margin: 20px 0;
+}
+
+.docs-main nav li {
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #ccc solid;
+}
+
+.docs-main a:hover {
+  font-weight: bold;
+}
+
+
+.docs-main .card p {
+  font-size: 22px;
+  line-height: 2.0;
+}

@@ -287,7 +287,7 @@
 
 .text-secondary {
   color: #333;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 400;
 }
 
@@ -330,6 +330,7 @@
 .bg-primary, .btn-primary {
   background-color: var(--primary-color);
   color: var(--alt-color);
+  font-size: 1rem;
 }
 
 .bg-secondary, .btn-secondary {
@@ -348,4 +349,20 @@
 
 .bg-light {
   color: white;
+}
+
+
+.alert-success {
+  background-color: var(--success-color);
+  color: var(--alt-color);
+}
+
+.alert-error {
+  background-color: var(--error-color);
+  color: var(--alt-color);
+}
+
+.alert-warning {
+  background-color: var(--warning-color);
+  color: var(--alt-color);
 }
