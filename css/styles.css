@@ -258,6 +258,7 @@ a.btn-outline:hover {
 
 .cli {
   animation: slideInFromLeft 1s ease-in;
+  animation-delay: 0.5s;
 }
 
 .cli .grid {
@@ -275,6 +276,7 @@ a.btn-outline:hover {
 .cloud .container {
   grid-template-columns: 4fr 3fr;
   animation:slideInFromLeft 1s ease-in;
+  animation-delay: 0.5s;
 }
 
 
@@ -294,7 +296,8 @@ a.btn-outline:hover {
 /* Languages */
 
 .languages {
-  animation: slideInFromLeft 1s ease-in;
+  animation: slideInFromRight 1s ease-in;
+  animation-delay: 0.5s;
 }
 
 
