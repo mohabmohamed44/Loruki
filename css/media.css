@@ -272,3 +272,19 @@
   }
 }
 
+
+/* Docs Page */
+@media screen and (max-width: 768px) {
+  .docs-head {
+    text-align: center;
+  }
+
+  .docs-main .grid {
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;
+  }
+
+  .docs-head img {
+    margin: 0 auto;
+  }
+}
